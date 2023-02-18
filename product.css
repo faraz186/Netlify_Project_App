@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.cards-css{
+  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    /* transition: transform 0.5s;
+  */
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+/* .cards-css :hover{
+transform: perspective(100px) translate3d(0px,0px,2px);
+} */
+.selecter{
+  text-align: right;
+  padding-right: 70px;
+ 
+}
+.title h2{
+  text-align: center;
+}
+.third {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 40px 40px #173E8F inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.banner1 button{
+  font-weight: 500;
+  font-size: large;
+  color: #ffffff ;
+  border-color: rgb(255, 255, 255);
+   background-color: #ffffff;
+  width: 250px;
+}
+.btn:hover, .btn:focus {
+  color: rgb(0, 0, 0);
+}
+
+.footer{
+  background: rgb(84, 78, 78);/*footer background color is black*/
+  color: #8a8a8a;/*text color*/
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;/*paragraphs color in class footer*/
+}
+.footer h3{
+  color: #fff;/*heading color is white*/
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;/*all columns should have a min width of 250px*/
+  margin-bottom:20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-2{
+  flex: 1;/*flex 1 is used to fill complete occupy given space*/
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;/*editing image in col2*/
+  margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;/*both footer col3 and col4 occupies 12% each*/
+  text-align: center;
+}
+ul{
+  list-style-type: none;/*remove bullets from links specially links which are in footer*/
+}
+.app-logo{
+  margin-top: 20px;
+}
+.app-logo img{
+  width: 140px;
+}
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+.footer-styling{
+  margin-top: 100px;
+}
