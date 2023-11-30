@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1000px;
+            height: 300px;
+            border:1px red solid;
+            margin: auto;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top:0;
+            left: 0;
+            transition: 1s;
+        }
+        .demo{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: 1s;
+        }
+        .main:hover .box{
+            left: 900px;
+            top:200px;
+        }
+        .main:hover .demo{
+            bottom: 200px;
+            right: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="demo"></div>
+    </div>
+</body>
+</html>
