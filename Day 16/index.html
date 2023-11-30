@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: move;
+            animation-duration: 1s;
+            /* animation-delay: 2s; */
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-color: violet;
+                top: 0;
+                left: 0;
+                transform: rotate(0);
+            }
+
+            25% {
+                background-color: blue;
+                top: 0;
+                left: 700px;
+                transform: rotate(90deg);
+
+            }
+
+            50% {
+                background-color: yellow;
+                top: 400px;
+                left: 700px;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                background-color: green;
+                top: 400px;
+                left: 00px;
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background-color: palevioletred;
+                top: 0;
+                left: 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 1000px;
+            height: 600px;
+            border: 2px red solid;
+            margin: auto;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation-iteration-count: infinite !important;
+            animation-direction: alternate !important;
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            top: 0;
+            left: 0;
+            animation: box1 5s;
+            /* animation-name and duration */
+        }
+
+        @keyframes box1 {
+
+            0%,
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: 800px;
+            }
+
+            50% {
+                left: 800px;
+                top: 400px;
+            }
+
+            75% {
+                top: 400px;
+                left: 0;
+            }
+        }
+
+        .box:nth-child(2) {
+            background-color: blue;
+            top: 0;
+            left: 800px;
+            animation: box2 5s 0.5s;
+            /* duration delay */
+        }
+
+        @keyframes box2 {
+
+            0%,
+            100% {
+                top: 0;
+                left: 800px;
+            }
+
+            25% {
+                left: 800px;
+                top: 400px;
+            }
+
+            50% {
+                top: 400px;
+                left: 0;
+            }
+
+            75% {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .box:nth-child(3) {
+            background-color: yellow;
+            left: 800px;
+            top: 400px;
+            animation: box3 5s 1s;
+        }
+
+        @keyframes box3 {
+
+            0%,
+            100% {
+                left: 800px;
+                top: 400px;
+            }
+
+            25% {
+                top: 400px;
+                left: 0;
+            }
+
+            50% {
+                top: 0;
+                left: 0;
+            }
+
+            75% {
+                top: 0;
+                left: 800px;
+            }
+        }
+
+        .box:nth-child(4) {
+            background-color: green;
+            top: 400px;
+            left: 0;
+            animation: box4 5s 1.5s;
+        }
+
+        @keyframes box4 {
+
+            0%,
+            100% {
+                top: 400px;
+                left: 0;
+            }
+
+            25% {
+                top: 0px;
+                left: 0;
+            }
+
+            50% {
+                top: 0;
+                left: 800px;
+            }
+
+            75% {
+                top: 400px;
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
