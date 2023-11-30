@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 1000px;
+            height: 500px;
+            border: 2px black solid;
+        }
+
+        .box1 {
+            width: 496px;
+            /* 500 - 3 - 3 = 494*/
+            height: 496px;
+            /* 500 - 3 - 3 = 494 */
+            /* background-color: red; */
+            border: 3px red solid;
+            float: left;
+        }
+
+        .box2 {
+            width: 496px;
+            height: 496px;
+            /* background-color: blue; */
+            border: 2px blue solid;
+            float: left;
+        }
+
+        .child {
+            /* width: 494px; */
+            width: 100%;
+            /* height: 494px; */
+            height: 100%;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1">
+            <div class="child"></div>
+        </div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

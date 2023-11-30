@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 400px;
+            height: 400px;
+            border: 2px red solid;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            transition: 1s;
+        }
+
+        .parent:hover h1 {
+            /* parent child */
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>Hello World!!</h1>
+    </div>
+    <h1>How are you?</h1>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.box {
+    width: 1000px;
+    height: 500px;
+    border: 2px red solid;
+    background: url(../images/b3.jpg) no-repeat left center red;
+    /* ../ one folder  */
+    background-size: 300px 300px;
+    /* background-image: url(images/b3.jpg); */
+    /* background-repeat: no-repeat; */
+    /* 
+    no-repeat
+    repeat-x
+    repeat-y
+    */
+    /* 
+        cover -> 100% in width / height -> auto 
+        contain -> 100% in height / width -> auto
+        width height: 500px 500px;
+    */
+    /* background-position: left center; */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 1000px;
+            height: 500px;
+            border: 2px black solid;
+            margin: 50px auto;
+        }
+
+        .box {
+            width: 480px;
+            /* 500 - 10 - 10 */
+            height: 480px;
+            /* 500 - 10 - 10 */
+            background-color: red;
+            float: left;
+            /* margin: 5px 10px; */
+            margin: 10px 8px 9px 6px;
+            /* top right bottom left */
+            /* margin-top: 10px;
+            margin-bottom:9px;
+            margin-left: 6px;
+            margin-right:8px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box" style="background-color: aqua;"></div>
+    </div>
+</body>
+
+</html>

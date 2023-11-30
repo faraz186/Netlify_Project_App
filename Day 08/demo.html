@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            border: 2px red solid;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            border: 1px blue solid;
+            padding: 10px;
+        }
+
+        p {
+            color: red;
+        }
+
+        h1:hover~p {
+            /* sibling to sibling  */
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Hello World!!</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quae aliquam unde quia asperiores, ut
+            dolorum optio. Perspiciatis ut minus doloremque doloribus aut sed soluta! Maiores illum voluptas consequatur
+            ducimus?
+        </p>
+    </div>
+</body>
+
+</html>
