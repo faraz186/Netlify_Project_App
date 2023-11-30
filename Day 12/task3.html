@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 400px;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            transition: 1s;
+            left: 0;
+            top: 0;
+        }
+
+        /* .box:hover img:nth-child(1) {
+            left: 300px;
+        } */
+
+        .box:hover img:nth-child(2) {
+            left: 300px;
+        }
+
+        .box:hover img:nth-child(3) {
+            left: 600px;
+        }
+
+        .box:hover img:nth-child(4) {
+            left: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/300/400?random=1">
+        <img src="https://picsum.photos/300/400?random=2">
+        <img src="https://picsum.photos/300/400?random=3">
+        <img src="https://picsum.photos/300/400?random=4">
+    </div>
+</body>
+
+</html>

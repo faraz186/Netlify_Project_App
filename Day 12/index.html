@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px black solid;
+            margin: auto;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: 1s;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+        }
+
+        .box:hover .overlay {
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/500/500" alt="">
+        <div class="overlay">
+            One Day Tour in RajasthanIf you are looking for some great deals to visit the amazing state of Rajasthan,
+            your search ends here. Our One Day Tour in Rajasthan promises a vacation filled with experiences and
+            memories that are worth cherishing for life. Find thrill and adventure in or One Day Tour Package of
+            Rajasthan.
+        </div>
+    </div>
+</body>
+
+</html>
