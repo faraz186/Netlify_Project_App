@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 30px;
+            height: 30px;
+            background-color: grey;
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            left: -100px;
+            animation: ball 2s infinite linear alternate;
+        }
+
+        @keyframes ball {
+            from {
+                left: -5%;
+                opacity: 0.3;
+            }
+
+            to {
+                left: 98%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+    <div class="ball" style="animation-delay: 0.1s;"></div>
+    <div class="ball" style="animation-delay: 0.2s;"></div>
+    <div class="ball" style="animation-delay: 0.3s;"></div>
+    <div class="ball" style="animation-delay: 0.4s;"></div>
+    <div class="ball" style="animation-delay: 0.5s;"></div>
+    <div class="ball" style="animation-delay: 0.6s;"></div>
+    <div class="ball" style="animation-delay: 0.7s;"></div>
+    <div class="ball" style="animation-delay: 0.8s;"></div>
+    <div class="ball" style="animation-delay: 0.9s;"></div>
+</body>
+
+</html>

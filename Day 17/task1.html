@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .parent {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .circle {
+            width: 100%;
+            height: 100%;
+            border: 2px red solid;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .circle:nth-child(even) {
+            animation: rotate 3s infinite linear;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(0deg);
+            }
+
+            to {
+                transform: rotateX(360deg);
+            }
+        }
+
+        .circle:nth-child(odd) {
+            animation: rotate2 3s infinite linear;
+        }
+
+        @keyframes rotate2 {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="circle"></div>
+        <div class="circle" style="animation-delay: 0.1s;"></div>
+        <div class="circle" style="animation-delay: 0.2s;"></div>
+        <div class="circle" style="animation-delay: 0.3s;"></div>
+        <div class="circle" style="animation-delay: 0.4s;"></div>
+        <div class="circle" style="animation-delay: 0.5s;"></div>
+        <div class="circle" style="animation-delay: 0.6s;"></div>
+        <div class="circle" style="animation-delay: 0.7s;"></div>
+        <div class="circle" style="animation-delay: 0.8s;"></div>
+        <div class="circle" style="animation-delay: 0.9s;"></div>
+    </div>
+</body>
+
+</html>

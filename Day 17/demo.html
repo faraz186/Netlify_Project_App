@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 1000px;
+            height: 600px;
+            border-bottom: 5px black solid;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+
+        .bar {
+            width: 100px;
+            height: 100%;
+            background-color: orange;
+            transform: translateY(100%);
+            animation: loader 2s infinite alternate;
+        }
+
+        @keyframes loader {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="bar"></div>
+        <div class="bar" style="animation-delay: 0.1s;"></div>
+        <div class="bar" style="animation-delay: 0.2s;"></div>
+        <div class="bar" style="animation-delay: 0.3s;"></div>
+        <div class="bar" style="animation-delay: 0.4s;"></div>
+    </div>
+</body>
+
+</html>
