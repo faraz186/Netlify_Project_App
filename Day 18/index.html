@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .main {
+            width: 1000px;
+            min-height: 500px;
+            border: 2px red solid;
+            margin: auto;
+            font-family: verdana;
+        }
+
+        .row {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        .required-input::after{
+            content: "*";
+            font-size: 14px;
+            margin-left: 4px;
+            color: red;
+        }
+        .row input,
+        .row textarea {
+            margin-top: 10px;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+            resize: vertical;
+            /* vertical, horizontal and both */
+        }
+        .heading{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="heading">Registration Form</h1>
+        <form action="">
+            <div class="row">
+                <label class="required-input" for="username">Name</label>
+                <input type="text" required name="user_name" id="username" placeholder="Enter name here" maxlength="20" autofocus>
+            </div>
+            <div class="row">
+                <label class="required-input" for="useremail">Email</label>
+                <input type="email" required name="user_email" id="useremail" placeholder="Enter email here" >
+            </div>
+            <div class="row">
+                <label class="required-input" for="userpassword">Password</label>
+                <input type="password" required name="user_password" id="userpassword" placeholder="Enter password here" >
+            </div>
+            <div class="row">
+                <label for="">Gender</label>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="user_gender" value="M">
+
+                    <label for="female">Female</label>
+                    <input type="radio" checked id="female" name="user_gender" value="F">
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Interest</label>
+                <div>
+                    <label for="gaming">Gaming</label>
+                    <input type="checkbox" checked id="gaming" name="user_interest" value="G">
+
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" id="singing" name="user_interest" value="S">
+
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="coding" name="user_interest" value="C">
+                </div>
+            </div>
+            <div class="row">
+                <label for="addres">Address</label>
+                <!-- <input type="text" name="user_address"> -->
+                <textarea id="addres" name="user_address" placeholder="Enter address here" maxlength="200"></textarea>
+            </div>
+            <div class="row" style="flex-direction: row; gap:10px">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

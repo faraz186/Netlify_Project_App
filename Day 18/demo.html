@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .main {
+            width: 1000px;
+            min-height: 500px;
+            border: 2px red solid;
+            margin: auto;
+            font-family: verdana;
+        }
+
+        .row {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .required-input::after {
+            content: "*";
+            font-size: 14px;
+            margin-left: 4px;
+            color: red;
+        }
+
+        .row input,
+        .row textarea {
+            margin-top: 10px;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+            resize: vertical;
+            /* vertical, horizontal and both */
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .row-flex {
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .row-flex input {
+            margin-top: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="">
+            <div class="row row-flex">
+                <label for="">Color</label>
+                <input type="color" name="user_color">
+            </div>
+            <div class="row row-flex">
+                <label for="">Age</label>
+                <input type="number" min="18" max="35" step="0.1">
+            </div>
+            <div class="row row-flex">
+                <label for="">Appointement</label>
+                <input type="date" style="resize: none;" min="2023-04-23" max="2023-04-30">
+                <input type="time" style="resize: none;">
+                <input type="datetime-local">
+            </div>
+            <div class="row row-flex">
+                <label for="">Country</label>
+                <select name="country">
+                    <option value="0">Select a country</option>
+                    <option value="+91" selected>India</option>
+                    <option value="+93">China</option>
+                    <option value="+03">America</option>
+                </select>
+            </div>
+            <input type="hidden" name="key" value="qwertyuio">
+            <div class="row row-flex">
+                <button type="submit">Save</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
