@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        nav {
+            width: 1000px;
+            margin: 10px auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+            box-shadow: 0px 0px 2px gainsboro;
+        }
+
+        nav>ul {
+            /* direct child */
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        .notation {
+            transition: 0.5s;
+        }
+
+        nav>ul>li {
+            position: relative;
+        }
+
+        .child {
+            list-style: none;
+            box-shadow: 0px 0px 3px grey;
+            position: absolute;
+            /* top: 30px; */
+            top: 30px;
+            visibility: hidden;
+            transition: 0.5s;
+            transform-origin: top center;
+            transform: scaleY(0);
+            opacity: 0;
+        }
+
+        nav>ul>li:hover .child {
+            opacity: 1;
+            transform: scaleY(1);
+            visibility: visible;
+        }
+
+        nav>ul>li:hover .notation {
+            transform: rotate(-180deg);
+        }
+
+        .child li {
+            width: 150px;
+            box-sizing: border-box;
+            padding: 10px;
+            border-bottom: 1px lightgrey solid;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Item 1 <i class="notation fa-solid fa-caret-down"></i></a>
+                <ul class="child">
+                    <li>Sub Item 1</li>
+                    <li>Sub Item 2</li>
+                    <li>Sub Item 3</li>
+                    <li>Sub Item 4</li>
+                    <li>Sub Item 5</li>
+                    <li>Sub Item 6</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Item 2</a>
+            </li>
+            <li>
+                <a href="">Item 3</a>
+            </li>
+            <li>
+                <a href="">Item 4 <i class="notation fa-solid fa-caret-down"></i></a>
+                <ul class="child">
+                    <li>Sub Item4 1</li>
+                    <li>Sub Item4 2</li>
+                    <li>Sub Item4 3</li>
+                    <li>Sub Item4 4</li>
+                    <li>Sub Item4 5</li>
+                    <li>Sub Item4 6</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Item 5</a>
+            </li>
+            <li>
+                <a href="">Item 6 <i class="notation fa-solid fa-caret-down"></i></a>
+                <ul class="child">
+                    <li>Sub Item6 1</li>
+                    <li>Sub Item6 2</li>
+                    <li>Sub Item6 3</li>
+                    <li>Sub Item6 4</li>
+                    <li>Sub Item6 5</li>
+                    <li>Sub Item6 6</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="https://kit.fontawesome.com/57191dd267.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
